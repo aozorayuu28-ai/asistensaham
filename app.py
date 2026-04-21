@@ -24,7 +24,7 @@ def hitung_rsi(data, periode=14):
 
 # 4. Tampilan Sidebar (Logo & Navigasi)
 try:
-    logo = Image.open('logo.png')
+    logo = Image.open('logo.PNG')
     st.sidebar.image(logo, use_container_width=True)
 except:
     st.sidebar.title("💎 ashapri")
