@@ -3,7 +3,7 @@ import yfinance as yf
 import pandas as pd
 
 # Konfigurasi Tampilan Halaman
-st.set_page_config(page_title="Pencari Saham Pintar", page_icon="🔍", layout="centered")
+st.set_page_config(page_title="Analisis Saham Pribadi", page_icon="🔍", layout="centered")
 
 # Fungsi Rumus RSI
 def hitung_rsi(data, periode=14):
@@ -14,12 +14,13 @@ def hitung_rsi(data, periode=14):
     return 100 - (100 / (1 + rs))
 
 # Bagian Header Website
-st.title("🔍 Pencari Saham Pintar")
+st.title("🔍 Ayo Mulai Analisis")
 st.write("Ketik kode saham, dan saya akan memberikan analisis serta penjelasan yang mudah dipahami!")
 
 # Kotak Pencarian
 search_query = st.text_input("🔍 Masukkan Kode Saham (contoh: BBCA, GOTO, TLKM):", "").upper()
 
+st.write("dibuat oleh orang gabut contact me jika terdapat kendala @v.pratamaa on instagram!")
 if search_query:
     # Memastikan format kode saham sesuai dengan Yahoo Finance (tambah .JK untuk saham Indonesia)
     if not search_query.endswith('.JK'):
