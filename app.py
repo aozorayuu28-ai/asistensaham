@@ -36,11 +36,12 @@ st.sidebar.write("- Analisis Fundamental (Long Term)")
 st.sidebar.write("- Manajemen Risiko (Stop Loss)")
 
 # 5. Tampilan Utama
-st.title("🔍 Pencari Saham Pintar")
+st.title("🔍 Ayo Mulai Analisis")
 st.write("Masukkan kode saham untuk mendapatkan analisis mendalam dan rekomendasi.")
 
 search_query = st.text_input("Ketik kode saham (contoh: BBCA, ASII, ANTM):", "").upper()
 
+st.write("Website dibuat ole tama contact me linktr.ee/vargaspratama .")
 if search_query:
     symbol = search_query if search_query.endswith('.JK') else search_query + '.JK'
     
